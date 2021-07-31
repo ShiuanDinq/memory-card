@@ -1,7 +1,9 @@
+import Game from "./Components/Game";
+
 function App() {
   return (
     <div >
-      haha
+      <Game />
     </div>
   );
 }
