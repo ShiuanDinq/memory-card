@@ -1,0 +1,24 @@
+.pressed:active{
+  animation: pressed 0.5s forwards ease-in-out;
+  background-color: coral;
+}
+
+@media(max-width: 700px) {
+  .tail{
+    flex-direction: column;
+  }
+}
+
+
+@keyframes pressed {
+  0% {
+    transform:translateX(0);
+    transform:translateY(0); 
+  }
+
+  100% {
+    transform:translateX(5rem);
+    transform:translateY(5rem); 
+
+  }
+}

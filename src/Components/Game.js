@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react"
 import Card from "./Card"
 import Images from "./Images"
+import Score from "./Score"
+import Nav from "./Nav"
+
 
 const Game = () => {
   const [numbers] = useState(Images)
@@ -67,10 +70,10 @@ const Game = () => {
 
   return(
     <div>
+      <Nav />
+
+      <Score score={score} highScore={highScore}/>
       <Card handleMatch={handleMatch} shuffledNum={shuffledNum}/>
-      <button onClick={handleShuffle}>shuffle</button>
-      <p>Score: {score}</p>
-      <p>High Score: {highScore}</p>
     </div>
   )
 }
