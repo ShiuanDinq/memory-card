@@ -5,6 +5,7 @@ import Score from "./Score"
 import Nav from "./Nav"
 
 
+
 const Game = () => {
   const [numbers] = useState(Images)
   const [shuffledNum, setShuffledNum] = useState([])
@@ -71,7 +72,6 @@ const Game = () => {
   return(
     <div>
       <Nav />
-
       <Score score={score} highScore={highScore}/>
       <Card handleMatch={handleMatch} shuffledNum={shuffledNum}/>
     </div>

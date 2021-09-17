@@ -1,3 +1,4 @@
+
 const Card = (props) => {
 
   const shuffled = props.shuffledNum.map((item) => (
@@ -8,6 +9,9 @@ const Card = (props) => {
       id={item.id} 
       src={item.src}
       alt={item.src}
+
+
+  
 
       />
     </div>
